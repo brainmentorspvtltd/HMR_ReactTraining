@@ -1,0 +1,25 @@
+#header {
+    background-color: lightgray !important;
+}
+
+#header a {
+    color: black;
+}
+
+.menu a {
+    color: red;
+}
+
+#main-nav>ul>li {
+    display: inline-block;
+    /* width: 300px; */
+    width: 12%;
+    background-color: lightblue;
+}
+
+ul li a {
+    color: orange;
+    text-decoration: none;
+}
+
+.dropdown {}
