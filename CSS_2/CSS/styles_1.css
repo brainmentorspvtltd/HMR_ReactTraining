@@ -1,0 +1,42 @@
+#header {
+    background-color: lightgray !important;
+}
+
+#header a {
+    color: black;
+}
+
+.menu a {
+    color: red;
+}
+
+#main-nav>ul>li {
+    display: inline-block;
+    /* width: 300px; */
+    width: 12%;
+    background-color: lightblue;
+    position: relative;
+}
+
+ul li a {
+    color: orange;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.dropdown {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    background-color: lightcoral;
+    display: none;
+}
+
+#main-nav ul li:hover .dropdown {
+    display: block;
+}

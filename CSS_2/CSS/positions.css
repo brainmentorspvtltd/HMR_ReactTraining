@@ -1,0 +1,28 @@
+header {
+    position: fixed;
+    background-color: lightblue;
+    width: 100%;
+    top: 0px;
+    z-index: 100;
+}
+
+h2 {
+    margin: 0px;
+}
+
+#content {
+    margin-top: 120px;
+}
+
+img {
+    width: 40%;
+}
+
+.image {
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    top: 0px;
+}
