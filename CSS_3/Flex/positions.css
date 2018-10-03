@@ -1,0 +1,56 @@
+/* Media Queries */
+
+
+/* 1200px
+992px
+768px
+576px 
+*/
+
+@media(max-width:400px) {
+    body {
+        background-color: blue;
+    }
+}
+
+header {
+    position: fixed;
+    background-color: lightblue;
+    width: 100%;
+    top: 0px;
+    z-index: 100;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h2 {
+    margin: 0px;
+}
+
+#content {
+    margin-top: 120px;
+}
+
+img {
+    width: 100%;
+}
+
+.col {
+    margin: 0px 10px;
+    width: 30%;
+}
+
+@media(max-width: 768px) {}
+
+.image {
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    top: 0px;
+}
