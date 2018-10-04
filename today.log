@@ -1,0 +1,497 @@
+var a;
+undefined
+typeof(a)
+"undefined"
+a=100
+100
+typeof(a)
+"number"
+a=1;
+1
+typeof(a)
+"number"
+a=10000000;
+10000000
+typeof(a)
+"number"
+a=100.200;
+100.2
+typeof(a)
+"number"
+var b = 200;
+undefined
+a;
+100.2
+b;
+200
+typeof(a)
+"number"
+typeof(b)
+"number"
+a + b
+300.2
+b="100"
+"100"
+typeof(b)
+"string"
+a + b
+"100.2100"
+a=100
+100
+a + b
+"100100"
+a- b
+0
+a= "Amit"
+"Amit"
+b="Srivastava"
+"Srivastava"
+a="100"
+"100"
+b="200"
+"200"
+a-b
+-100
+a + b
+"100200"
+parseInt(a) + parseInt(b)
+300
+a="Amit"
+"Amit"
+b="Srivastava"
+"Srivastava"
+a-b
+NaN
+var c = a-b
+undefined
+c;
+NaN
+typeof(c);
+"number"
+parseInt("Amit")
+NaN
+isNaN(parseInt("Amit"))
+true
+isNaN(parseInt("Amit"))?"Not a Valid Number":"Valid No"
+"Not a Valid Number"
+a = 100/0;
+Infinity
+typeof(a)
+"number"
+isFinite(a)
+false
+isFinite()
+false
+a=10;
+10
+isFinite(a);
+true
+isFinite(a/0);
+false
+ a= Number("100")
+100
+ a= Number("100.20")
+100.2
+a = parseInt("100.20")
+100
+typeof(parseInt);
+"function"
+parseInt(Number)
+NaN
+typeof(Number)
+"function"
+var d= new Number(100);
+undefined
+typeof(d);
+"object"
+d instanceof Number;
+true
+typeof(Number);
+"function"
+var t = 100;
+undefined
+d;
+Number {100}
+d++
+
+100
+d;
+101
+var obj = {};
+undefined
+typeof(obj);
+"object"
+obj instanceof Object;
+true
+d;
+101
+var d= new Number(100);
+undefined
+d;
+Number {100}
+d instanceof Number;
+true
+d instanceof Object;
+true
+var a = "Amit";
+undefined
+a='Amit'
+"Amit"
+typeof(a)
+"string"
+a='A'
+"A"
+typeof(a)
+"string"
+a=`hgkfjhkjdfhgkjhdkjfghkjdg
+g
+fg
+dfg
+fd
+g
+dfg
+fd
+g
+dfg
+df
+gfd
+`
+"hgkfjhkjdfhgkjhdkjfghkjdg
+g
+fg
+dfg
+fd
+g
+dfg
+fd
+g
+dfg
+df
+gfd
+"
+a
+"hgkfjhkjdfhgkjhdkjfghkjdg
+g
+fg
+dfg
+fd
+g
+dfg
+fd
+g
+dfg
+df
+gfd
+"
+a="Let's Do It"
+"Let's Do It"
+a;
+"Let's Do It"
+var e = new String("Hello");
+undefined
+typeof(e);
+"object"
+e instanceof String;
+true
+var a = "Hello";
+undefined
+e.length
+5
+var a = 100;
+undefined
+var e= true;
+undefined
+ 100 + true;
+101
+var t = "Hello";
+undefined
+typeof(t)
+"string"
+var t1 = new String("Hello")
+undefined
+typeof(t1)
+"object"
+var t1 = new String(t);
+undefined
+t1.length;
+5
+t.length
+5
+var obj = {};
+undefined
+obj.id = 1001;
+1001
+obj.name ="Amit";
+"Amit"
+obj;
+{id: 1001, name: "Amit"}
+var obj2 = {id:1002,name:'Ram',salary:9999};
+undefined
+obj;
+{id: 1001, name: "Amit"}
+obj2;
+{id: 1002, name: "Ram", salary: 9999}
+obj2.bonus = 9999;
+9999
+obj2;
+{id: 1002, name: "Ram", salary: 9999, bonus: 9999}
+delete obj2.id;
+true
+obj2;
+{name: "Ram", salary: 9999, bonus: 9999}
+obj = null;
+null
+var t = {};
+undefined
+t.id=1001;
+1001
+t;
+{id: 1001}
+var m1 = t;
+undefined
+t= null;
+null
+m1;
+{id: 1001}
+t = m1;
+{id: 1001}
+t;
+{id: 1001}
+typeof(t);
+"object"
+t;
+{id: 1001}
+t= null;
+null
+typeof(t);
+"object"
+var bahu = {
+crown:true, diamond=true
+}
+VM8336:2 Uncaught SyntaxError: Invalid shorthand property initializer
+var bahu = {
+crown:true, diamond:true
+}
+undefined
+typeof(bahu);
+"object"
+bahu.crown;
+true
+bahu = null;
+null
+bahu;
+null
+typeof(bahu);
+"object"
+var tt = undefined;
+undefined
+var mm = {};
+undefined
+typeof(mm);
+"object"
+a= 100;
+100
+typeof(a)
+"number"
+a = "Hello"
+"Hello"
+a= {}
+{}
+a=undefined
+undefined
+typeof(a)
+"undefined"
+var  e = [10,20,30,40,50];
+undefined
+typeof(e)
+"object"
+var m = new Array(10,20,30,40,50);
+undefined
+m;
+(5) [10, 20, 30, 40, 50]
+e;
+(5) [10, 20, 30, 40, 50]
+e instanceof Array;
+true
+e instanceof Object;
+true
+e instanceof Number;
+false
+function add(x,y){
+return x + y;
+}
+undefined
+add(100,200);
+300
+function sum(){
+console.log("I am Sum ");
+}
+undefined
+sum();
+VM9686:2 I am Sum 
+undefined
+sum(10,20)
+VM9686:2 I am Sum 
+undefined
+sum(10,30,40,"Amit",[22,44]);
+VM9686:2 I am Sum 
+undefined
+add(32,45,650
+VM10348:1 Uncaught SyntaxError: missing ) after argument list
+add(32,45,65)
+77
+function sum(){
+console.log(' Sum is ');
+}
+undefined
+console.dir(sum);
+VM12152:1 ƒ sum()arguments: nullcaller: nulllength: 0name: "sum"prototype: {constructor: ƒ}__proto__: ƒ ()apply: ƒ apply()arguments: (...)bind: ƒ bind()call: ƒ call()caller: (...)constructor: ƒ Function()length: 0name: ""toString: ƒ toString()Symbol(Symbol.hasInstance): ƒ [Symbol.hasInstance]()get arguments: ƒ ()set arguments: ƒ ()get caller: ƒ ()set caller: ƒ ()__proto__: Object[[FunctionLocation]]: <unknown>[[Scopes]]: Scopes[0][[FunctionLocation]]: VM12084:1[[Scopes]]: Scopes[1]
+undefined
+function sum(){
+console.log(arguments.length);
+}
+undefined
+sum();
+VM12456:2 0
+undefined
+sum(10,20);
+VM12456:2 2
+undefined
+sum(10,20,90,100);
+VM12456:2 4
+undefined
+function sum(){
+var total = 0;
+for(let i = 0; i<arguments.length; i++){
+total +=arguments[i];
+}
+return total;
+}
+undefined
+sum();
+0
+sum(1,2,3);
+6
+sum(1,2,3,true,false,true)
+8
+function sum(){
+var total = 0;
+for(let i = 0; i<arguments.length; i++){
+total +=parseInt(arguments[i]);
+}
+return total;
+}
+undefined
+sum(1,2,3,"10",10)
+26
+sum(1,2,3,"ten","10")
+NaN
+10 + NaN
+NaN
+function sum(){
+var total = 0;
+for(let i = 0; i<arguments.length; i++){
+total +=isNaN(parseInt(arguments[i]))?0:parseInt(arguments[i]);
+}
+return total;
+}
+undefined
+sum(10,"ten","10",20)
+40
+function firstNumber(){
+return 1000;
+}
+undefined
+function secondNumber(){
+return "2000";
+}
+undefined
+sum(firstNumber,secondNumber,"10",10,"ten");
+20
+sum(firstNumber(),secondNumber(),"10",10,"ten");
+3020
+parseInt(firstNumber)
+NaN
+parseInt(firstNumber())
+1000
+function sum(){
+var total = 0;
+for(let i = 0; i<arguments.length; i++){
+if(typeof arguments[i]=="function"){
+arguments[i] = arguments[i]();
+}
+total +=isNaN(parseInt(arguments[i]))?0:parseInt(arguments[i]);
+}
+return total;
+}
+undefined
+sum(firstNumber,secondNumber,"10",10,"ten");
+3020
+function jQuery(){
+console.log("Jquery ");
+}
+undefined
+jQuery([10,20])
+VM15204:2 Jquery 
+undefined
+var $ = jQuery;
+undefined
+$();
+VM15204:2 Jquery 
+undefined
+function sum2(...a){
+var total = 0;
+for(let i = 0 ;i<a.length; i++){
+total += a[i];
+}
+return total;
+}
+undefined
+sum2(10,20);
+30
+var t1 = [10,20,30];
+undefined
+var t2 = [90,100,2000];
+undefined
+var t3 = [t1,t2];
+undefined
+t3;
+(2) [Array(3), Array(3)]0: (3) [10, 20, 30]1: (3) [90, 100, 2000]length: 2__proto__: Array(0)
+t1 + t2
+"10,20,3090,100,2000"
+var z= t1 + t2;
+undefined
+typeof(z);
+"string"
+var gg  = [...t1 ,...t2];
+undefined
+gg;
+(6) [10, 20, 30, 90, 100, 2000]
+typeof(gg)
+"object"
+gg instanceof Array;
+true
+var obj  = {id:101,name:'Ram'};
+undefined
+var obj2 = {salary:9999, hra:555};
+undefined
+var gg = {...obj,...obj2};
+undefined
+gg;
+{id: 101, name: "Ram", salary: 9999, hra: 555}
+gg.id++;
+101
+gg;
+{id: 102, name: "Ram", salary: 9999, hra: 555}
+obj;
+{id: 101, name: "Ram"}
+var bb = {obj,obj2};
+undefined
+bb;
+{obj: {…}, obj2: {…}}
+bb.obj.id++;
+101
+obj;
+{id: 102, name: "Ram"}
+bb.obj;
+{id: 102, name: "Ram"}
