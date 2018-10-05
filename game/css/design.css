@@ -1,0 +1,17 @@
+button {
+    width: 30%;
+    height: 100px;
+    background-color: cyan;
+    display: inline-block;
+    margin: 5px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.row {
+    display: flex;
+}
+
+h2 {
+    text-align: center;
+}
