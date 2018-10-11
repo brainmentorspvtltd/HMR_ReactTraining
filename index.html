@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function showPlayer(data) {
+            document.querySelector("#img").src = data.imageURL;
+            document.querySelector("#name").innerText = data.fullName
+            document.querySelector("#born").innerText = data.born;
+            document.querySelector("#battingstyle").innerText = data.battingStyle;
+
+        }
+
+        function printPlayer() {
+            var playerId = document.querySelector("#players").value;
+            console.log("Player Id is ", playerId);
+            var url = "http://cricapi.com/api/playerStats?pid=" + playerId + "&apikey=A8zoDoPaQgefmB7KunnSuApSgL73";
+            console.log("Before Call ");
+            var promise = fetch(url); // Async
+            console.log("After Call ", promise);
+            for (let i = 1; i <= 10; i++) {
+                console.log("Time Pass ", i);
+            }
+            promise.then(response => {
+                response.json().then(data => {
+                    showPlayer(data);
+                    console.log("data is ", data);
+                    console.log("Bat ", data.battingStyle);
+                    console.log("Born ", data.born);
+                    console.log("Name is ", data.fullName);
+                    console.log("Img is ", data.imageURL);
+                }).catch(err => {
+                    console.log("Invalid JSON ", err);
+                })
+            }).catch(err => {
+                console.log("Server Problem ", err);
+            })
+
+        }
+    </script>
+</head>
+
+<body>
+    <label for="">Select Player</label>
+    <select onchange="printPlayer()" id="players">
+            <option value="">Choose Player</option>
+        <option value="28081">Dhoni</option>
+        <option value="253802">Virat</option>
+        <option value="35320">Sachin</option>
+       
+    </select>
+    <fieldset id="result">
+        <legend>Player Info</legend>
+        <img id="img">
+        <h2 id="name"></h2>
+        <p id="born"></p>
+        <p id="battingstyle"></p>
+    </fieldset>
+</body>
+
+</html>
