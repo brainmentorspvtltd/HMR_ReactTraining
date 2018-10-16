@@ -1,0 +1,15 @@
+FireBase Backend
+BootStrap - Look andFeel
+PWA - Installable
+
+1. Login and Register 
+During Register Seller , Buyer Option.
+
+
+2. After Login 
+Seller Options
+a) Add Brand  , Add Product
+
+Buyer Options
+Buy Brand , Filtering , Sorting
+Add to Cart , View Cart , Buy , Bill
