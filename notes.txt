@@ -1,0 +1,108 @@
+https://brainmentorspvtltd.github.io/onlineshopapp/
+
+ - npm run build
+
+
+http://appiconmaker.co/Home/Index/9f65e91a-e950-4b3a-8b17-b4ca75ab3702
+
+
+
+
+<Router basename={'/directory-name'}>
+<Route path={`${process.env.PUBLIC_URL}/`} component={Home} />
+  <Route path={`${process.env.PUBLIC_URL}/news`} component={News} />
+  <Route path={`${process.env.PUBLIC_URL}/about`} component={About} />
+
+
+
+"homepage": "https://myapp.com/directory-name",
+
+call register of service worker in index.js
+
+isAuth(loginStatus,uid){
+    this.setState({isLogin:loginStatus,userName:uid});
+  }
+{this.state.isLogin?<Crud userName = {this.state.userName}/>:<Login updateLoginStatus={this.isAuth.bind(this)}/>}
+
+
+
+
+ReactDOM.render( <BrowserRouter><App/></BrowserRouter>,document.querySelector("#root"));
+
+<nav className="navbar navbar-expand-lg navbar-light bg-light">
+<a classNameName="navbar-brand" href="#">
+    <img src="https://www.svgimages.com/svg-image/s7/amazon-logo-256x256.png" width="30" height="30" classNameName="d-inline-block align-top" alt=""/>
+    Shopping
+  </a>
+  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span className="navbar-toggler-icon"></span>
+  </button>
+
+  <div className="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul className="navbar-nav mr-auto">
+      <li className="nav-item active">
+      <NavLink className="nav-link" activeClassName="active" to="/">Items <span className="sr-only">(current)</span></NavLink>
+      </li>
+      <li className="nav-item">
+        <NavLink className="nav-link" to="/about">AboutUs</NavLink>
+      </li>
+      </ul>
+        </div>
+</nav>
+
+
+ <Switch>
+       
+        <Route path="/" exact component={Shop}/>
+        <Route path="/about"  exact component={AboutUs}/>
+      </Switch>
+
+
+
+Ajax URL
+https://raw.githubusercontent.com/brainmentorspvtltd/myserverdata/master/mobiles.json
+Life Cycle
+
+create-react-app shopapplication
+cd shopapplication
+npm install react-router-dom —save
+npm install bootstrap —save
+
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+
+FireBase with CRUD React
+npm install firebase —save
+
+Put in config file
+export const config = {
+    apiKey: "AIzaSyB0khYvn4YsAE1lEvKeghhIfQLHskFY48A",
+    authDomain: "testengine-d35b2.firebaseapp.com",
+    databaseURL: "https://testengine-d35b2.firebaseio.com",
+    projectId: "testengine-d35b2",
+    storageBucket: "testengine-d35b2.appspot.com",
+    messagingSenderId: "132908856781"
+  };
+
+Add in index js
+import * as  firebase from ‘firebase’
+
+
+  firebase.initializeApp(config);
+
+
+Adding
+var promise = firebase.database().ref('users/'+userObject.userid).set(userObject))
+
+Getting 
+var users =firebase.database().ref('users/'+userid);
+ 
+users.on('value',function(snapshot){
+            var obj = snapshot.val();
+
+
+Getting all 
+var prodRef = firebase.database().ref('products');
+        prodRef.on("value",(snapshot)=>{
+            //console.log("Snap Shot is ::: ",snapshot.val());
+            var object = snapshot.val();
